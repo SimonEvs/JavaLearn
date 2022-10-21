@@ -1,3 +1,4 @@
+// Написать программу вычисления n-ого треугольного числа.
 package Java_Tasks.First;
 
 public class FirstTask {

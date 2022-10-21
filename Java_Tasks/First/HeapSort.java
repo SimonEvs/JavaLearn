@@ -1,5 +1,6 @@
-// Heap Sort in Java
-  
+
+//Heap Sort in Java  
+
 public class HeapSort {
   
     public void sort(int arr[]) {
