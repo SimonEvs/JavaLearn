@@ -43,18 +43,23 @@ public class Ex001 {
 
         int powValue = secondNumber;
         int value = firstNumber;
-        double result=Math.pow( value, powValue);
+        double result = Math.pow(value, powValue);
         if ((value == 0) && (powValue == 0)) {
+            try (FileWriter fw = new FileWriter("output.txt", false)) {
+                fw.write("Не определено");
+            } catch (IOException ex) {
+                System.out.println(ex.getMessage());
+            }
+
             System.out.println("Не определено");
         } else {
-            System.out.println(
-                    "ответ: " + value + " в степени " + powValue + " = " + result);}
 
-        try (FileWriter fw = new FileWriter("output.txt", false)) {
-            fw.write("ответ: " + value + " в степени " + powValue + " = " + result);
-        } catch (IOException ex) {
-            System.out.println(ex.getMessage());
+            try (FileWriter fw = new FileWriter("output.txt", false)) {
+                fw.write("ответ: " + value + " в степени " + powValue + " = " + result);
+            } catch (IOException ex) {
+                System.out.println(ex.getMessage());
+            }
+            System.out.print("ответ: " + value + " в степени " + powValue + " = " + result);
         }
-
     }
 }
