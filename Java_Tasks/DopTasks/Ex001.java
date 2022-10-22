@@ -29,44 +29,50 @@ public class Ex001 {
     // }
 
     public static void main(String[] args) throws Exception {
-
         FileReader fr = new FileReader("input.txt");
         int c;
+        char ch;
         String str = new String();
         StringBuilder sb = new StringBuilder(str);
         while ((c = fr.read()) != -1) {
 
-            char ch = (char) c;
+            ch = (char) c;
             sb.append(ch);
-            // if (ch == '\n') {
-            //     //  System.out.print();
-            //     sb.append(' ');
-            //     // System.out.print(sb);
-                
-            // } 
-            // else {
-            //     //  System.out.println();
-            //     sb.append(ch);
-            //     //  System.out.print(sb);
-            // }
-
-            System.out.print(ch);
-            if c=a
-            // newArray[i]=c;
-            // i++;
-            // newArray;
-
-            // int[] arr = new int[3];
-
-            // arr[i] = c;
-            // int value = arr[0];
-            // int powValue = arr[1];
-
-            // System.out.printf("%d , %d \n", value,powValue);
-            // System.out.print(powValue);
-            // int result = (int) Math.pow(value, powValue);
-            // System.out.println(result);
         }
+        str = String.valueOf(sb);
+        System.out.println(str);
+        char[] newString=str.toCharArray();
+        String[] words = str.split((" "));
+        String[] temp = words[1].split(",");
+        int secondNumber = Integer.parseInt(words[3]);
+        int firstNumber = Integer.parseInt(temp[0]);
+        System.out.println(firstNumber);
+        System.out.println(secondNumber);
+        
+        // int powValue;
+        // int value;
+        int powValue=firstNumber;
+        int value=secondNumber;
+        System.out.println("ответ - "+ value+" в степени "+powValue+"="+ Math.pow((int)value,(int) powValue));
+
+        //System.out.println("привет"+newString);
+
+        // if (newString[0] == "b") {
+        //     powValue = firstNumber;
+        //     value = secondNumber;
+        //     System.out.print("Степень равна -" + powValue);
+        //     System.out.print("Основное число равно-" + value);
+        // }
+        // if (newString[0] == "a") {
+        //     powValue = secondNumber;
+        //     value = firstNumber;
+        // System.out.println("Степень равна -" + powValue);
+        // System.out.println("Основное число равно-" + value);
+        // }
+
+        // String[] firstLine=(words);
+
+        // System.out.print(sb);
         // System.out.println(Arrays.toString(newArray));
         // try (FileWriter fw = new FileWriter("output.txt", false)) {
         // // fw.write(result);
