@@ -6,7 +6,7 @@ import Java_Tasks.Third.lib.MyStorage;
 
 public class App {
 
-  MyStorage.
+  
 
   public static void main(String[] args) {
 
