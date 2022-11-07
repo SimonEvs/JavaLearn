@@ -32,6 +32,8 @@ public class WaveAlgoritm {
                 } 
                 else if (MyNewArray[i][j] == 98)
                 System.out.printf("**");
+                else if (MyNewArray[i][j] == 99)
+                System.out.printf("xx");
                 else {
                     System.out.printf("  ");
                 }
@@ -45,7 +47,7 @@ public class WaveAlgoritm {
         int j = 1;
         // num- число, которое должно храниться в клетке, изначально у нас оно равно 1
         int num = 1;
-        while (num== 7) {
+        while (num< 7) {
             
             //Добавляем к num единицу, так как следующая точка будет на единицу больше предыдущей
             num++;
